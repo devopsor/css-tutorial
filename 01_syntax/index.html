@@ -1,0 +1,53 @@
+<!-- 
+    CSS syntax
+    ​In this tutorial, you will learn how to define CSS rules in a style sheet, 
+    you can style HTML elements through CSS properties. Different HTML elements may have different CSS properties that 
+    can be set. CSS properties can be organized into CSS rules. A CSS rule groups together a set of CSS properties and 
+    applies all properties to HTML elements matched by the CSS rule. 
+-->
+
+<!-- 
+    Understand CSS syntax
+    A CSS style sheet consists of a set of rules that are interpreted by a web browser and then applied to 
+    the corresponding elements in the document, such as paragraphs, headings, etc.
+ -->
+
+<!-- 
+    CSS rules have two main parts, a selector and one or more declarations:
+    The selector specifies which element in the HTML page the CSS rule applies to.
+
+    The declaration inside the block determines how the element is formatted on the web page. 
+    Each declaration consists of 
+        a property and a value separated by 
+        a colon ( :) and 
+        terminated by a semicolon ( ;), and 
+        groups of declarations are enclosed in curly braces {}.
+
+    This property is the style property you want to change. 
+    They can be fonts, colors, backgrounds, etc. 
+    Each property has a value, for example the color property can have value blueor #0000FFetc.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+</body>
+
+</html>

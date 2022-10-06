@@ -1,7 +1,7 @@
-### CCS_Tutorial
+## CCS_Tutorial
 
 
-#### Introduction to CSS
+### Introduction to CSS
 
 CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used to describe the presentation (i.e. layout and formatting) of web pages.
 
@@ -13,7 +13,7 @@ To solve this problem, CSS was introduced in 1996 by the World Wide Web Consorti
 
 CSS3 is the latest version of the CSS specification. CSS3 adds some new styling features and improvements to enhance web presentations.
 
-#### What CSS can do
+### What CSS can do
 
 CSS can do so much more.
 
@@ -30,7 +30,7 @@ CSS can do so much more.
 The advantages of CSS are many more, and there are many other interesting things you can do with CSS. In the next chapters, you will learn about all of these in detail.
 
 
-#### Advantages of using CSS
+### Advantages of using CSS
 
 The biggest advantage of CSS is that it separates style and layout from the content of the document. There are more advantages here, why choose to use CSS?
 
@@ -44,7 +44,7 @@ The biggest advantage of CSS is that it separates style and layout from the cont
 
 - Multiple Device Compatibility - CSS also allows web pages to be optimized for multiple types of devices or media. Using CSS, the same HTML document can be rendered with different viewing styles for different rendering devices (e.g. desktop, mobile, etc.).
 
-#### What this tutorial covers
+### What this tutorial covers
 
 This CSS tutorial series covers all the basics of CSS, including the concept of selectors, how to set colors and backgrounds, how to format fonts and text, styling UI elements like hyperlinks, lists, tables, and CSS boxes model, etc.
 
@@ -52,7 +52,7 @@ Once you're familiar with the basics, you'll move on to the next level, which wi
 
 Finally, you'll explore some of the advanced features introduced in CSS3, such as gradient colors, shadow effects, 2D and 3D transforms, alpha transparency, and ways to create transitions and animation effects, flex layouts, filter effects, media concept queries, and more.
 
-#### Include CSS in HTML documents
+### Include CSS in HTML documents
 
 CSS can be attached as a separate document or embedded in the HTML document itself. There are three ways to include CSS in an HTML document:
 
@@ -131,7 +131,7 @@ You can attach external style sheets in two ways - linking and importing .
 
     This @importrule is another way to load external style sheets. This @importstatement instructs the browser to load an external style sheet and use its styles.   
     You can use it in two ways. The easiest is within the header of the document. Note that other CSS rules may still be included in the \<style\> element. Here is an example:
-    
+
     ```css
     @import  url( "css/layout.css" );
     @import  url( "css/color.css" ); 

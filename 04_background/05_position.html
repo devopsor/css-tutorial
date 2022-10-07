@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>background position</title>
+    <style>
+        /* 
+            Background position
+            background-positionProperties are used to control the position of the background image.
+            If not background-positionspecified, the image will be placed at the element's default top-left position, 
+            ie (0,0). See the following examples:
+        */
+        body {
+            background-image: url("./image/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: 10px top;
+            /* the background image is in the upper right corner */
+            /* background-position: 100% top; */
+        }
+
+        h1,
+        p {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This is title</h1>
+        <p>This is paragraph.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS background-color</title>
+    <style>
+        /* 
+            Background attachment
+            background-attachmentProperty determines whether the background image is fixed 
+            relative to the viewport or scrolls with the containing block. 
+        */
+
+        body {
+            width: 250px;
+            height: 350px;
+            overflow: scroll;
+            background-image: url("./image/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This is title</h1>
+        <p>This is paragraph.</p>
+    </div>
+
+</body>
+
+</html>

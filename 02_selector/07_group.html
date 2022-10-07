@@ -1,0 +1,43 @@
+<!-- 
+    Group Selector
+    Multiple selectors in a style sheet often share the same style rule declaration. 
+    You can group them into a comma-separated list to minimize code in your stylesheet. 
+    It also prevents you from repeating the same style rules over and over.
+    As you can see in the example above, the same style rules font-weight: normal;are shared by select h1, h2 and h3. 
+    So it can be split into comma separated lists like this:
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        h1,
+        h2,
+        h3 {
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 36px;
+
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a h1 title </h1>
+    <h2>This is a h2 title </h2>
+    <h3>This is a h3 title </h3>
+
+</body>
+
+</html>

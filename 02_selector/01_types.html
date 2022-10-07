@@ -14,12 +14,18 @@
 
 <head>
     <style>
-
         /* ID selector */
         #error {
             color: red;
         }
-
+        /* Class Selector */
+        .green {
+            color: #00ff00;
+        }
+        /* Element type selector */
+        p {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -31,6 +37,21 @@
         The definition of an ID selector is a pound sign ( #) followed by an ID value. 
     -->
     <p id="error">This is a warning!</p>
+
+    <!-- 
+        Class Selector
+        Class selectors can be used to select classany HTML element with attributes. 
+        All elements with this class will be formatted according to the defined rules.
+        .A class selector is defined with a period ( ) immediately following the class value. 
+    -->
+    <p class="green">This is a paragraph.</p>
+
+    <!-- 
+        Element type selector
+        The element type selector matches each instance of an element in the document tree 
+        with the corresponding element type name. 
+    -->
+    <p>This is a paragraph.</p>
 
 </body>
 

@@ -1,0 +1,49 @@
+<!-- 
+    CSS selectors
+    A CSS selector is a pattern used to match elements in an HTML document. 
+    The associated style rules will be applied to elements matching the selector pattern.
+
+    What is a selector
+    Selectors are one of the most important aspects of CSS because they are used to select elements on 
+    a web page so that they can be styled. You can define selectors in several ways.
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Descendant selector */
+        h1 em {
+            color: green;
+        }
+        ul li a {
+            text-decoration: none;
+        }
+        ul li #head {
+            color:red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        Descendant selector
+        Use these selectors when you need to select an element that is a descendant of another element. 
+        For example, if you only want to target those anchors contained in the unordered list, not all the anchor elements.
+     -->
+    <h1>This is a <em>heading</em></h1>
+    <ul class="menu">
+        <li><a id="head" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+
+</body>
+
+</html>

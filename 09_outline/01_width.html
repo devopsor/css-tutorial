@@ -1,0 +1,46 @@
+<!-- 
+    CSS Outline
+    An outline is a line drawn outside the border edge of an element (such as a button, active form field, etc.) to make it stand out.
+
+    Outline VS Border
+    Outlines are often used to highlight elements. Outlines look very similar to borders at first glance, but differ from borders in the following ways:
+    Outlines take up no space because they are always placed on top of the element box, which can cause them to overlap other elements on the page.
+    Unlike borders, outlines do not allow us to set each edge to a different width, nor can we set each edge to a different color and style. 
+    The silhouette is the same in all respects.
+    Outlines have no effect on surrounding elements other than overlapping.
+    Unlike borders, outlines do not change the size or position of an element.
+    Outlines may not be rectangular.
+    Note: If you put an outline on an element, it will take up the same space on the web page as if you had no outline for that element.
+
+    The outline-width property specifies the width of the outline to be added to the element. 
+    Its value should be a CSS length (px, pt, em, etc.) or one of the allowed keywords, 
+    but percentages or negative values ​​are not allowed. Just like the border-width property.
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>outline-width outline width property</title>
+    <style>
+        p {
+            /* none, hidden, dashed, dotted, double, groove, inset, outset, ridge, and solid */
+            outline-style: dotted;
+            /* 
+                thin , medium , thick ,
+                length: 1 to 4 values 
+                inherit 
+            */
+            outline-width: medium;
+            outline-color :  #0000ff;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+
+</body>
+
+</html>

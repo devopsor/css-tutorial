@@ -1,31 +1,78 @@
 <!-- 
+    CSS Cursors
+    CSS cursor property that defines the cursor type (ie the mouse pointer) when the mouse moves over an area or a link on a web page. 
 
-
- -->
+    Change the appearance of the cursor
+    Browsers typically display a mouse pointer over any empty part of a web page, a gloved hand over any link or clickable item, 
+    and an edit cursor over any text or text field. Using CSS, you can redefine these properties to display a variety of different cursors.
+-->
 
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
+    <title>Create custom cursor</title>
     <style>
-        h1 {
-            color: blue;
-            text-align: center;
+        a {
+            cursor: url("/static/lib/images/custom.gif"), url("/static/lib/images/custom.cur"), default;
         }
 
-        p {
-            font-size: 18px;
-            text-transform: uppercase;
+        .cursor-demo span {
+            min-width: 100px;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            display: inline-block;
+            border: 1px solid grey;
+            border-radius: 3px;
         }
     </style>
 </head>
 
 <body>
-
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-
+    <h1>Create custom cursor</h1>
+    <p>Put the mouse pointer<a href="#">over me</a> to show a custom cursor.</p>
+    <hr>
+    <h2>More custom cursor</h2>
+    <p>Put the mouse pointer over me to show a custom cursor..</p>
+    <div class="cursor-demo">
+        <span style="cursor: auto;">auto</span>
+        <span style="cursor: default;">default</span>
+        <span style="cursor: none;">none</span>
+        <span style="cursor: context-menu;">context-menu</span>
+        <span style="cursor: help;">help</span>
+        <span style="cursor: pointer;">pointer</span>
+        <span style="cursor: progress;">progress</span>
+        <span style="cursor: wait;">wait</span>
+        <span style="cursor: cell;">cell</span>
+        <span style="cursor: crosshair;">crosshair</span>
+        <span style="cursor: text;">text</span>
+        <span style="cursor: vertical-text;">vertical-text</span>
+        <span style="cursor: alias;">alias</span>
+        <span style="cursor: copy;">copy</span>
+        <span style="cursor: move;">move</span>
+        <span style="cursor: no-drop;">no-drop</span>
+        <span style="cursor: not-allowed;">not-allowed</span>
+        <span style="cursor: grab;">grab</span>
+        <span style="cursor: grabbing;">grabbing</span>
+        <span style="cursor:e-resize">e-resize</span>
+        <span style="cursor: n-resize;">n-resize</span>
+        <span style="cursor: ne-resize;">ne-resize</span>
+        <span style="cursor: nw-resize;">nw-resize</span>
+        <span style="cursor: s-resize;">s-resize</span>
+        <span style="cursor: se-resize;">se-resize</span>
+        <span style="cursor: sw-resize;">sw-resize</span>
+        <span style="cursor: w-resize;">w-resize</span>
+        <span style="cursor: ew-resize;">ew-resize</span>
+        <span style="cursor: ns-resize;">ns-resize</span>
+        <span style="cursor: nesw-resize;">nesw-resize</span>
+        <span style="cursor: nwse-resize;">nwse-resize</span>
+        <span style="cursor: col-resize;">col-resize</span>
+        <span style="cursor: row-resize;">row-resize</span>
+        <span style="cursor: all-scroll;">all-scroll</span>
+        <span style="cursor: zoom-in;">zoom-in</span>
+        <span style="cursor: zoom-out;">zoom-out</span>
+    </div>
 </body>
 
 </html>

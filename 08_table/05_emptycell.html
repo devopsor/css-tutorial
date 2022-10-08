@@ -1,0 +1,63 @@
+<!-- 
+    Handling empty cells
+    The empty-cells CSS property controls the borders, and there is no visible content on the table that 
+    is a model cell background that uses a detached border.
+    This property can take one of three values: show, hide or inherit.
+    The following style rules hide empty cells in table elements.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS empty-cells property</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: separate;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #000000;
+        }
+
+        table.empty-show {
+            empty-cells: show;
+        }
+
+        table.empty-hide {
+            empty-cells: hide;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table with Empty-cells</h2>
+    <table class="empty-show">
+        <tr>
+            <th>Name</th>
+            <td>John Carter</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <h2>Table with Hidden Empty-cells</h2>
+    <table class="empty-hide">
+        <tr>
+            <th>Name</th>
+            <td>Peter Parker</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

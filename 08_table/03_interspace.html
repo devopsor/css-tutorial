@@ -1,0 +1,70 @@
+<!-- 
+    Adjust the internal space of the table
+    By default, browsers create table cells just big enough to hold the data in the cells. 
+    To add more space around the content of a table cell, you can use the CSS padding property like this:
+
+    border-spacing If the borders of the table are separated (the default), 
+    you can also use a CSS property to adjust the spacing between cell borders.
+    The following style rule applies a 10-pixel spacing between all borders in the table:
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Adjust the internal space of the table</title>
+    <style>
+        table {
+            border-spacing: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+
+        td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td>johncarter@mail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>peterparker@mail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>Rambo</td>
+            <td>johnrambo@mail.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Harry</td>
+            <td>Potter</td>
+            <td>harrypotter@mail.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>

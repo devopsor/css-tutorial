@@ -1,0 +1,85 @@
+<!-- 
+    Control table layout
+    By default, tables expand and contract to accommodate the data they contain. 
+    As data populates the table, the data continues to expand as long as there is room. 
+    However, sometimes it is necessary to set a fixed width for the table to manage the layout.
+
+    You can do this with the help of the CSS table-layout property. 
+    This property defines the algorithm used to lay out table cells, rows and columns. 
+    This property takes one of two values:
+        auto — Use the automatic table layout algorithm. Using this algorithm,
+                    the width of the table and its cells can be adjusted to fit the content. This is the default value.
+        fixed - use the fixed table layout algorithm. Using this algorithm, the horizontal layout of the table does not depend on 
+                    the contents of the cells; it only depends on the width of the table, 
+                    the width of the columns, and the spacing of borders or cells.
+    In the example below, the style rule indicates that the table is laid out using the fixed layout algorithm and 
+    has a fixed width of 300 pixels.
+
+    Without a fixed value for this table-layout attribute, on large tables, the user will not see any part of 
+    the table until the browser has rendered the entire table.
+
+    Tip: You can optimize table rendering performance by specifying the table-layout property. 
+    A fixed value for this property causes the table to render one row at a time, providing faster information to the user.
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Control table layout</title>
+    <style>
+        table {
+            width: 250px;
+            border-collapse: separate;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid #000000;
+        }
+
+        .auto {
+            table-layout: auto;
+        }
+
+        .fixed {
+            table-layout: fixed;
+        }
+
+        td {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="auto">
+        <caption>Example 1. Auto</caption>
+        <tr>
+            <th>Name</th>
+            <td>John Carter</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>johncarter@mail.com</td>
+        </tr>
+    </table>
+    <br>
+    <table class="fixed">
+        <caption>Example 2. Fixed</caption>
+        <tr>
+            <th>Name</th>
+            <td>Peter Parker</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>peterparker@mail.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>

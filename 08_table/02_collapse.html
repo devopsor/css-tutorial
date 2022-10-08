@@ -1,0 +1,67 @@
+<!-- 
+    Collapsing table borders
+    If you saw the output of the previous example, you'll notice that each table cell has a separate border, 
+    and that there is some space between the borders of adjacent table cells. 
+    This happens because table cell boundaries are separated by default. 
+    However, you can collapse separate table borders into a single border<table> 
+    using the property border-collapse on the element:
+
+    In the example below, the style rule collapses the table cell borders and applies a 
+    one-pixel black border to the table and table cell elements.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Collapsing table borders</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td>johncarter@mail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>peterparker@mail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>Rambo</td>
+            <td>johnrambo@mail.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Harry</td>
+            <td>Potter</td>
+            <td>harrypotter@mail.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>

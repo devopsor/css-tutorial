@@ -1,0 +1,39 @@
+<!-- 
+    Word Spacing
+
+    word-spacing property to set the spacing between words.
+    Word spacing can be affected by text alignment. Check out the text-align property.
+    When left blank, all whitespace characters are affected by word spacing. See CSS white-space property.
+    Possible values ​​for the word-spacing property are: length (specifies the spaces to insert between words) normal and inherit.
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        p.one {
+            word-spacing: 20px;
+        }
+
+        p.two {
+            width: 150px;
+            word-spacing: 20px;
+            text-align: justify;
+        }
+
+        p.three {
+            word-spacing: 20px;
+            white-space: pre;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one">This is a paragraph.</p>
+    <p class="two">This is a paragraph.</p>
+    <p class="three">This is a paragraph.</p>
+</body>
+
+</html>

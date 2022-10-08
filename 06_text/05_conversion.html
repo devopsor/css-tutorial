@@ -1,0 +1,49 @@
+<!-- 
+    Text Conversion
+    The text-transform property is used to set the capitalization of the text.
+    It can be used to set the text content of an element to uppercase or lowercase, or to capitalize the first letter of each word. 
+    The possible values ​​for the text-transform property are: 
+        none, 
+        capitalize, 
+        uppercase, 
+        lowercase and 
+        inherit.
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        p.none {
+            text-transform: none;
+        }
+
+        p.up {
+            text-transform: uppercase;
+        }
+
+        p.cap {
+            text-transform: capitalize;
+        }
+
+        p.low {
+            text-transform: lowercase;
+        }
+
+        p.inherit {
+            text-transform: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="none">This is a paragraph.</p>
+    <p class="up">This is a paragraph.</p>
+    <p class="cap">This is a paragraph.</p>
+    <p class="low">This is a paragraph.</p>
+    <p class="inherit">This is a paragraph.</p>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!-- 
+    Remove link default underline
+    The text-decoration attribute is typically used to remove the default underline from hyperlinks. 
+    Removing underscores entirely can confuse visitors. Unless you provide additional visual cues to 
+    make it stand out, but also style the link.
+
+    For example, you can underline a link with a dot instead of a solid line.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Remove link default underline</title>
+    <style>
+        a {
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+
+        a:hover {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Place your mouse pointer <a href="#">over me!</a></p>
+</body>
+
+</html>

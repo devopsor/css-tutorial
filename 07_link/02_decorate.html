@@ -1,0 +1,45 @@
+<!-- 
+    CSS Links
+    A link or hyperlink is a link from one web resource page to another web resource page.
+
+    CSS style link
+    Links have four different states - link, visited, active and hover. These four states of a link or hyperlink can be styled differently through 
+    CSS properties using the anchor element's pseudo-class , depending on which state they are in.
+    This is a CSS pseudo-class associated with the HTML <a> tag and can be used to define different styles for different states of a hyperlink.
+        a:link — Styles a normal or unvisited link without the mouse pointer.
+        a:visited - Styles links that the user has visited without the mouse pointer.
+        a:hover — Styles the link when the user places the mouse pointer over the link.
+        a:active - Styles the link being clicked.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS style link</title>
+    <style>
+    a:link {
+        color: #FF0000;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #00FF00;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #FF00FF;
+        text-decoration: underline;
+    }
+    a:active {
+        color: #0000FF;
+        text-decoration: underline;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Place your mouse pointer <a href="#">over me!</a></p>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!-- 
+    Set font size with Em
+
+    em Units refer to the font size of the parent element.
+    em The size of the value is dynamic. 
+    When defining font-size the property, an em is equal to the size of the font applied to the element's parent.
+    And if you font-size set a to 20px on the body 1em=20px element 2em=40px.
+    If you don't set the font-size anywhere on the page, 
+    it's the browser's default which is 16px. Therefore, the default is 1em=16pxand 2em=32px.
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+     <meta charset="utf-8">
+     <style>
+         body {
+             font-size: 16px;
+         }
+ 
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 0.875em;
+        }
+     </style>
+ </head>
+ 
+ <body>
+     <h1>This is a title.</h1>
+     <p>This is a paragraph.</p>
+     <div>This is normal text.</div>
+ 
+ </body>
+ 
+ </html>

@@ -1,0 +1,42 @@
+<!-- 
+    Set font size with Em
+
+    Use a combination of percentage and Em
+    A solution to achieve a similar effect in all browsers is to font-size set a default percentage for the body element. 
+    A popular technique is font-size to set the body to 62.5%(i.e. 62.5% of the default 16px), which equals 10px or 0.625em.
+
+    Now, you can set font-sizeany element that will use em units, with an easy-to-remember conversion, this way , pxby 10 values , , , , etc. 
+    See the following examples:
+    10px=1em
+    12px=1.2em
+    14px=1.4em
+    16px=1.6em
+
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+     <meta charset="utf-8">
+     <style>
+         body {
+             font-size: 16px;
+         }
+        h1 {
+            font-size: 100%;
+        }
+        p {
+            font-size: 62.5%;  /* font-size 1em = 16px */
+        }
+     </style>
+ </head>
+ 
+ <body>
+     <h1>This is a title.</h1>
+     <p>This is a paragraph.</p>
+     <div>This is normal text.</div>
+ 
+ </body>
+ 
+ </html>

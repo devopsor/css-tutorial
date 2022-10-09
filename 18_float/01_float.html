@@ -1,0 +1,36 @@
+<!-- 
+    CSS Float
+    The CSS float property specifies whether the box should float. 
+    The float property in CSS is a positioning property. It is used to push an element to the left or right, 
+    allowing other elements to wrap around it, typically used for images and layouts.   
+
+    CSS floating elements
+    You can float elements to the left or right, but only for elements that produce boxes that are not absolutely positioned . Any element that follows the floated element will flow around the floated element on the other side.
+    The float property may have one of three values:
+    left:The element floats to the left of its containing block.
+    right:The element floats to the right of its containing block.
+    none:Remove the float attribute from the element.
+    initial:It sets the property to its initial value.
+    inherit:It is used to inherit this property from its parent element.
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>Example of Floating Elements</title>
+ <style>
+     img {
+         float: left;
+         width: 150px;
+         height: 150px;
+         margin-right: 20px;
+     }
+ </style>
+ </head>
+ <body>
+     <p>
+        <img src="./image/bg.jpg" alt="tree">
+        This is a paragraph.
+    </p>
+ </body>
+ </html>

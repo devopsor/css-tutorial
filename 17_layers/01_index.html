@@ -1,0 +1,57 @@
+<!-- 
+    Use the z-index property to stack elements in layers
+    HTML pages are often considered two-dimensional pages because text, images, and other elements are 
+    arranged on the page without overlapping. 
+    However, in addition to their horizontal and vertical positions, you can also use the CSS z-index property to 
+    stack boxes along the z-axis, i.e. one on top of the other. 
+    This property specifies a box whose stacking horizontal position value is one of absolute, fixed, or relative.
+
+    The z-position of each layer is represented as an integer representing the stacking order of the rendering. 
+    Elements with larger z-index overlap with lower elements.
+
+    A z-index property can help you create more complex web page layouts. 
+    Below is an example showing how to create layers in CSS.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Use the z-index property to stack elements in layers</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            opacity: 0.9;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .red {
+            background: #ff0000;
+            z-index: 1;
+        }
+
+        .green {
+            background: #00ff00;
+            z-index: 2;
+        }
+
+        .blue {
+            background: #0000ff;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red">
+        <div class="box green">
+            <div class="box blue"></div>
+        </div>
+    </div>
+</body>
+
+</html>

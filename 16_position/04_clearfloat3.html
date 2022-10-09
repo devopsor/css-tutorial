@@ -1,0 +1,44 @@
+<!-- 
+    Solution 3: Use the :after pseudo-element
+    The :after pseudo-element has been used quite extensively in conjunction with the content property to 
+    solve the problem of floating liquidation.
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>CSS Clear Floating</title>
+ <style>
+     .container{
+         background:yellow;
+         border: 1px solid #000000;      
+     }
+     .clearfix:after {
+         content:".";
+         display:block;
+         height:0;
+         clear:both;
+         visibility:hidden;
+     }
+     .container div {
+         width: 200px;        
+         margin: 10px;
+         padding: 10px;
+     }
+     div.red {
+         float: left;       
+         background: #ff0000
+     }
+     div.green {
+         float: right;
+         background: #00ff00;
+     }
+ </style>
+ </head>
+ <body>
+     <div class="container clearfix">
+        <div class="red">Left Floating.</div>
+        <div class="green">Right Floating</div>
+     </div>
+ </body>
+ </html>

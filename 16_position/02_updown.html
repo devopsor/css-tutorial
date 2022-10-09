@@ -1,0 +1,33 @@
+<!-- 
+    Use the position property to align elements
+    CSS position is used in conjunction with the left, and properties to align an element relative to 
+    the document's viewport or contain a parent element. righttopbottom
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>Example of CSS positioning</title>
+ <style>
+     p {
+         width: 200px;
+         padding: 10px;
+     }
+     .up {
+         background: #ee665a;
+         position: absolute;
+         top: 0;
+         
+     }
+     .down {
+         background: #b0d878;
+         position: absolute;
+         bottom: 0;
+     }
+ </style>
+ </head>
+ <body>
+     <p class="up">This paragraph is at the top of the document viewport.</p>
+     <p class="down">This paragraph is at the down of the document viewport.</p>
+ </body>
+ </html>

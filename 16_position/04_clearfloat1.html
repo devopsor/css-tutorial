@@ -1,0 +1,46 @@
+<!-- 
+    Fix collapsed parent
+    There are several ways to solve the CSS collapsing parent problem. The next section will introduce you to these solutions, along with real-time examples.
+
+    Solution 1: Floating container
+    The easiest way to fix this is to float the containing parent element.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Clear Floating</title>
+    <style>
+        .container {
+            float: left;
+            background: yellow;
+            border: 1px solid #c4884d;
+        }
+
+        p {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .red {
+            float: left;
+            background: #ff0000;
+        }
+
+        .green {
+            float: right;
+            background: #00ff00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red">Left Floating.</div>
+        <div class="green">Right Floating</div>
+    </div>
+</body>
+
+</html>

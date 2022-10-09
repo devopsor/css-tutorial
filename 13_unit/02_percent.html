@@ -1,0 +1,33 @@
+<!-- 
+    The exception occurs when em is specified in the value of the font-size property itself, which in this case refers to the font size of the parent element.
+
+    So, when we specify the font-size in em, 1em is equal to Inherited font-size. So font-size: 1.2em; makes the text 1.2 times larger than the parent element's text.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS units</title>
+    <style>
+        body {
+            font-size: 62.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            font-size: 1.6em;
+        }
+
+        p:first-letter {
+            font-size: 3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+</body>
+
+</html>

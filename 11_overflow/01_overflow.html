@@ -1,0 +1,94 @@
+<!-- 
+    CSS Overflow
+    The overflow property specifies the behavior that occurs when an element's content overflows (does not fit) into the element's box.
+
+    Handling overflow content
+    The content of the element may be larger than the size of the box itself. For example, 
+    the given width and height properties do not allow enough space to hold the element's content.
+
+    The CSS overflow property lets you specify whether to clip content, render scroll bars, 
+    or display overflow content for block-level elements.
+
+    This property can have one of the following values: 
+        visible: Defaults. The content is not clipped; it is rendered outside the element's box, so it may overlap other content.
+        hidden:The content of the overflow element box will be clipped and the rest of the content will not be visible.
+        scroll: The overflowed content is clipped as if hidden, but a scrolling mechanism is provided to access the overflowed content.
+        auto:If the content overflows the element's box, it will automatically provide a scrollbar to view the rest of the content, 
+                otherwise the scrollbar will not appear.
+    CSS3 also defines the overflow-x and overflow-y properties to allow independent control of vertical and horizontal clipping. 
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Handling overflow content</title>
+    <style>
+        div {
+            width: 350px;
+            height: 100px;
+            border: 1px solid #cccccc;
+        }
+        div.visible {
+            overflow: visible;
+        }
+
+        div.auto {
+            overflow: auto;
+        }
+
+        div.scroll {
+            overflow: scroll;
+        }
+
+        div.hidden {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Try changing the size of the div box and see how it works</h1>
+
+    <h2>overflow:scroll</h2>
+    <div class="scroll">
+        The overflowed content can be viewed using the scroll bar.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+    </div>
+    <h2>overflow:hidden</h2>
+    <div class="hidden">
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+    </div>
+    <h2>overflow:auto</h2>
+    <div class="auto">
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+        The overflowed content is hidden.
+    </div>
+
+    
+    <h2>overflow:visible</h2>
+    <div class="visible">
+        The overflowed content can be viewed using the scroll bar.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+        You can use the scroll bar to view overflowing content.
+    </div>
+
+</body>
+
+</html>

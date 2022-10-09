@@ -1,0 +1,39 @@
+<!-- 
+    Min-height minimum height property
+    The min-height property allows you to specify the minimum content height of a block. 
+    This minimum height does not include padding, borders or margins.
+
+    The element to which min-height is applied will never be smaller than the specified minimum height. 
+    For example, if you set height to 200px and min-height to 300px, the actual height of the element is 300px.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>Min-Height minimum property</title>
+    <style>
+        div {
+            height: 200px;
+            min-height: 100px;
+            background: #FFC0CB;
+        }
+
+        p {
+            min-height: 100px;
+            background: #F0E68C;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        The minimum height of this div element is set to 100px, so it cannot be higher than that.
+    </div>
+
+    <p>Enter another line of text to see how it works.</p>
+</body>
+
+</html>

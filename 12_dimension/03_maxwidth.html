@@ -1,0 +1,39 @@
+<!-- 
+    Max-width maximum width property
+    The max-width property allows you to specify the maximum content width of the block. 
+    This maximum width does not include padding, borders or margins.
+    Max-width Even if the width property is set to a larger value, the element to which a is applied will not be 
+    wider than the specified value. For example, if you set width to 300px and max-width to 200px, 
+    the actual width of the element will be 200px.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Max-width Maximum width property</title>
+    <style>
+        div {
+            width: 200px;
+            max-width: 100px;
+            height: 200px;
+            background: #FFC0CB;
+        }
+
+        p {
+            max-width: 100px;
+            background: #F0E68C;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        The maximum height of this div element is set to 100px, so it cannot be higher than that.
+    </div>
+
+    <p>Enter another line of text to see how it works.</p>
+</body>
+
+</html>

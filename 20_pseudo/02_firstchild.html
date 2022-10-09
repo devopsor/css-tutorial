@@ -1,0 +1,52 @@
+<!-- 
+    ::nth-child pseudo-class
+    CSS3 introduced a new :nth-child pseudo-class that allows you to 
+    target one or more specific children of a given parent element. 
+    The basic syntax for this choice can be given with: nth-child(N), 
+    where N is an argument, which can be a number, a keyword (even or odd), 
+    or an expression of the form xn+y, where x and y are Integers (eg 1n, 2n, 2n+1, ...).
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS :first-child pseudo-class example</title>
+    <style>
+        ol {
+            padding: 0;
+            list-style: none;
+        }
+
+        ol li {
+            padding: 10px 0;
+            border-top: 1px solid #000000;
+        }
+
+        li:first-child {
+            border-top: none;
+            color: chartreuse
+        }
+
+        li:nth-child(3n) {
+            color: yellow
+        }
+
+        li:last-child {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <h1>simple ordered list</h1>
+    <ol>
+        <li>Mix ingredients</li>
+        <li>Bake in oven for an hour</li>
+        <li>Bake in oven for two hour</li>
+        <li>Allow to stand for ten minutes</li>
+    </ol>
+</body>
+
+</html>

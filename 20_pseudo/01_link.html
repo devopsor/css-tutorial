@@ -1,0 +1,52 @@
+<!-- 
+    CSS Pseudo-classes (pseudo-classes)
+    CSS pseudo-class selectors match components based on other criteria, not necessarily defined by the document tree. 
+    CSS pseudo-classes are keywords added to selectors that specify special states for elements to be selected. 
+    For example, :hover can be used to change the color of a button when the user hovers over it.
+
+    What is a pseudo-class
+    CSS pseudo-classes allow you to style dynamic states of elements, such as hover, active, and focus states, 
+    and elements that are already in the document tree but cannot be targeted by using other selectors, 
+    without adding any selectors to their IDs or class, for example, for the first or last child element.
+
+    Pseudo-classes start with a colon (:). Its syntax can be given by:
+
+    selector: pseudo-class { property : value ; }
+
+    The following sections describe the most commonly used pseudo-classes.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of dynamic anchor pseudo-class</title>
+    <style>
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: gray;
+        }
+
+        a:focus {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Visit <a href="" target="_blank">www.google.com</a></p>
+</body>
+
+</html>

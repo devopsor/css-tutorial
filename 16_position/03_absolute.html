@@ -1,0 +1,60 @@
+<!-- 
+    Absolute positioning (absolute)
+    Absolutely positioned elements are positioned relative to the first parent element with a non-static position. 
+    If no such element is found, it is placed on the page relative to the "top left" of the browser window. 
+    The offset of the box is further specified using one or more of the properties top, right, bottom, and left.
+
+    Absolutely positioned elements are completely removed from the normal flow, so they don't take up space when sibling elements are placed. 
+    However, depending on the z-index property value, it can overlap other elements. 
+    Also, absolutely positioned elements can have margins , and they don't collapse with any other margins.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Relative Location</title>
+    <style>
+        .box {
+            position: absolute;
+            left: 100px;
+            color: #fff;
+            background: #00c4cc;
+            padding: 20px;
+        }
+
+        .container {
+            padding: 50px;
+            margin: 50px;
+            border: 5px solid black;
+            font-family: Arial, sans-serif;
+        }
+
+        .container p {
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>CSS Relative Location</h2>
+            <div><strong>Note:</strong>This box is in a Relative location, which is the default. Always target according
+                to the normal flow of the page..</div>
+        </div>
+        <p>
+            CSS provides rich document style appearances, as well as the ability to set text and background properties;
+            allows the creation of borders for any element, as well as the distance between the element's border and
+            other elements,
+            and the distance between the element's border and the element's content; allows arbitrary Change the
+            capitalization, decoration, and other page effects of text.
+        </p>
+        <p>CSS can define styles in the style attribute of HTML elements, or in the header section of HTML documents,
+            or declare styles in a special CSS file for reference by HTML pages.
+            In short, CSS style sheets can store all style declarations in a unified manner for unified management.
+        </p>
+    </div>
+</body>
+
+</html>

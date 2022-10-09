@@ -1,0 +1,74 @@
+<!-- 
+    CSS Position
+    The CSS position property is used to specify how elements are positioned on the page. 
+    There are several CSS Position (positioning) methods: static, absolute, relative, and fixed.
+
+    CSS positioning method
+    Proper positioning of elements on a web page is necessary for good layout design. 
+    There are several methods in CSS that can be used to position elements. 
+    The next section will introduce these positioning methods one by one.
+
+    Static positioning (static)
+    Statically positioned elements are always positioned according to the normal flow of the page. 
+    HTML elements are in a static position by default. Statically positioned elements are 
+    not affected by the top , bottom , left , right , and z-index properties.
+
+    If you don't specify an element's position attribute value, that is, by default, the element is statically positioned. 
+    As long as it is an html object that supports the position attribute, it is static by default. static is the default value of the position property, 
+    which means that the block remains where it should be and will not be repositioned.
+    To put it bluntly, we usually don't use "position:static" at all, but sometimes when we use javascript to control element positioning, 
+    if we want to make other positioning elements into static positioning, we must use "position:static" ;"to fulfill.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Static Location</title>
+    <style>
+        .box {
+            position: static;
+            left: 100px;
+            color: #fff;
+            background: #00c4cc;
+            padding: 20px;
+        }
+
+        .container {
+            padding: 50px;
+            margin: 50px;
+            position: relative;
+            border: 5px solid black;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .container p {
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>CSS Static Location</h2>
+            <div><strong>Note:</strong>This box is in a static location, which is the default. Always target according
+                to the normal flow of the page..</div>
+        </div>
+        <p>
+            CSS provides rich document style appearances, as well as the ability to set text and background properties;
+            allows the creation of borders for any element, as well as the distance between the element's border and
+            other elements,
+            and the distance between the element's border and the element's content; allows arbitrary Change the
+            capitalization, decoration, and other page effects of text.
+        </p>
+        <p>CSS can define styles in the style attribute of HTML elements, or in the header section of HTML documents,
+            or declare styles in a special CSS file for reference by HTML pages.
+            In short, CSS style sheets can store all style declarations in a unified manner for unified management.
+        </p>
+    </div>
+</body>
+
+</html>

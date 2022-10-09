@@ -1,0 +1,27 @@
+<!-- 
+    Do not display (none)
+    When the display property value is none, the element does not generate any box at all, and does not display on the page. 
+    Child elements also don't generate any boxes, even if their display property is set to not. 
+    The document is rendered as if the element does not exist in the document tree.
+
+    Note: A display property value of none does not create an invisible box - it does not generate any boxes. 
+    It also does not reserve its physical space for the hidden object, that is, the object disappears completely on the page, 
+    and is generally invisible and untouchable. See the live demo given in the Visibility and Display section.
+
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <title>CSS display:none </title>
+   <style>
+     h1 {
+         display: none;
+     }
+   </style>
+ </head>
+ <body>
+     <h1>Hello!</h1>
+     <p> <code>display: none</code> Makes the element generate no box at all, and does not display.</p>  
+ </body>
+ </html>

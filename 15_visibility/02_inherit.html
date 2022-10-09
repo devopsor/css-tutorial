@@ -1,0 +1,58 @@
+<!-- 
+    CSS Visibility vs Display
+    The CSS display and visibility properties may seem like the same thing, 
+    but they are actually quite different and often confuse the new features of web development.
+
+    visibility: hidden; hides the element, but it still takes up space in the layout. 
+    If the visibility of the hidden box's child elements is set to "visible", they will be visible.
+
+    display: none; turns off display and completely removes the element from the document. 
+    Even though its HTML is still in the source code, it doesn't take up any space. 
+    Even if all child elements have their display property set to none, their display will be turned off.
+
+
+    It can be seen from the above that although both the Visibility and Display properties can hide an element, 
+    the difference between them is that visibility: hidden hides an element while still retaining the required space for the element on the page, 
+    while display: none It behaves as if the element is removed from the page, and the element cannot be seen on the page.
+    In addition, the difference between display: block and display: inline is that the block element will occupy a single line in the page, 
+    while the inline element will not. Some objects default to block elements, while others default to inline elements. 
+    You need to use them when you use them. Take care to prevent duplicate definitions of the same properties.
+
+    When to use the Visibility or Display property
+    Although both the Visibility and Display properties can achieve the purpose of hiding page elements, 
+    the difference between them is how to respond to the normal document flow.
+    If you want to hide an element but keep space for that element on the page, you should use visibility: hidden . 
+    You should use display: none if you want to hide an element while leaving other content blank.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS display: block</title>
+    <style>
+        span {
+            /* Inherit the visibility value of the parent element. */
+            visibility: inherit;
+            background: #F0E68C;
+        }
+
+        a {
+            /* Only works on table objects, can remove rows or columns but Does not affect the layout of the table. 
+            If this value is used on an object other than a table it will behave as hidden . */
+            visibility: collapse;
+            background: #90EE90;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="/" target="_top">Access (google.com)</a>
+        <br>
+        <span>This span element generates a block box.</span>
+    </p>
+</body>
+
+</html>

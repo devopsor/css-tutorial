@@ -1,32 +1,71 @@
 <!-- 
+    CSS Padding
+    CSS padding is a shorthand property that defines the space between an element's border and 
+    the element's content, i.e., the top, bottom, left, and right padding.
 
-    a margin is the space around an element's border, while padding is the space between an element's border and the element's content. 
-    Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element
+    CSS padding property
+    The CSS padding property allows you to set the padding area of ​​an element that separates 
+    its border from its content. The fill is affected by the background-color box.
+
+    Define fills for individual faces
+    You can easily specify different padding for different sides of an element (e.g. top, right, bottom or left) 
+    using the CSS separate padding property.
+
+    The padding property can take one, two, three or four space-separated values.
+
+    If a value is set , it is applied to all four sides.
+    If two values ​​are specified , the first value will be applied to the top and bottom, and the second value will be applied to the right and left.
+    If three values ​​are specified , the first value applies to the top, the second to the left and right, and the last to the bottom.
+    If four values ​​are specified, they are applied to top, right, bottom, and left, respectively, in the order specified.
  -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
+    <title>CSS padding property example</title>
     <style>
         h1 {
-            color: blue;
-            text-align: center;
+            padding-bottom: 10px;
+            background: #c5c5e2;
         }
 
         p {
-            font-size: 18px;
-            text-transform: uppercase;
+            padding-top: 20px;
+            padding-left: 50px;
+            background: #ffb6c1;
+        }
+
+        div.one {
+            padding: 20px;
+            border-color: red;
+            border: 1px solid;
+
+        }
+
+        div.two {
+            padding: 10px 20px;
+            border-color: red;
+            border: 1px solid;
+
+        }
+
+        div.three {
+            padding: 10px 20px 30px;
+            border-color: red;
+            border: 1px solid;
+
         }
     </style>
 </head>
 
 <body>
-
-    <h1>This is a heading</h1>
+    <h1>This is a header</h1>
     <p>This is a paragraph.</p>
-
+    <p>Change the padding property value to see how it works</p>
+    <div class="one">This is a paragraph.</div>
+    <div class="two">This is a paragraph.</div>
+    <div class="three">This is a paragraph.</div>
 </body>
 
 </html>

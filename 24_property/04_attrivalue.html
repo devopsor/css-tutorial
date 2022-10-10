@@ -1,0 +1,84 @@
+<!-- 
+    CSS property selector
+    Attribute selectors style HTML elements with specified attributes. You can style HTML elements with specified attributes, not just class and id attributes.
+
+    Understanding attribute selectors
+    CSS attribute selectors provide a simple and powerful way to apply styles to HTML elements based on the presence of a specific attribute or attribute value .
+
+    You create attribute selectors by enclosing the attribute (optionally with a value) in a pair of square brackets. You can also put an element type selector in front of it .
+    The following sections describe the most common attribute selectors.
+
+    CSS [attribute] selector
+    This is the simplest form of an attribute selector, which applies style rules to the element if the given attribute exists. 
+    for example, we could style all elements with the title attribute using the following style rules:
+
+    CSS [attribute~="value"] selector
+    You can use the ~= operator to make an attribute selector match any element whose attribute value is 
+    a list of space-separated values ​​(such as class="alert warning"), one of which is equal to the specified value:
+
+    CSS [attribute |="value"] selector
+    You can use the |= operator to make an attribute selector match any element for which the attribute 
+    has a hyphen-separated list of values ​​starting with the specified value:
+
+    CSS [attribute ^="value"] selector
+    You can use the ^= operator to make an attribute selector match any element whose attribute value begins with the specified value . It doesn't have to be a complete word.
+
+    CSS [attribute $="value"] selector
+    Likewise, you can use the $= operator to select all elements whose attribute value ends with the specified value . It doesn't have to be a complete word.
+
+    CSS [attribute *="value"] selector
+    You can use the *= operator to make an attribute selector match all elements whose attribute value contains the specified value.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of attribute selector</title>
+    <style>
+        p[lang|=en] {
+            color: #fff;
+            background: blue;
+        }
+
+        p[lang^=us] {
+            color: #fff;
+            background: red;
+        }
+
+        a[href^="https://"] {
+            background: yellow;
+            padding-right: 15px;
+        }
+
+        a[href$=".pdf"] {
+            background: cyan;
+            padding-left: 20px;
+        }
+
+        [class*="warning"] {
+            color: #fff;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p lang="en">The style will apply to this paragraph.</p>
+    <p lang="en-us">The style will also apply to thi1s paragraph.</p>
+    <p lang="us">The style will not apply to this paragraph.</p>
+    <p lang="us-en">The style will not apply to this paragraph.</p>
+    <p lang="cn">The style will not apply to this paragraph.</p>
+    <p><a href="https://www.google.com" target="_blank">Google</a></p>
+    <p><a href="/run/downloads/masters.pdf">Download PDF</a></p>
+
+
+    <p class="warning">The style will be applied to this paragraph. </p>
+    The <p class="alert warning"> style will also apply to this paragraph. </p>
+    The <p class="alert-warning"> style will also be applied to this paragraph. </p>
+    <p class="alert_warning">The style will also be applied to this paragraph. </p>
+    <p class="highlight">The style does not apply to this paragraph. </p>
+</body>
+
+</html>

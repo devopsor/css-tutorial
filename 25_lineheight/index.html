@@ -1,31 +1,55 @@
 <!-- 
+CSS line-height (line height)
+    The CSS line-height line spacing property is used to define the minimum height of the wireframe in the element . It sets the spacing between two lines of content.
+    It defines the amount of space above and below the inline element. It allows you to set the height of the row independently of the font size.
 
+CSS line height value
+    The line-height property value is used together with the CSS line-height property.
+
+    value:describe
+    normal:This is the default value. It specifies the normal height.
+    number:It specifies a number that is multiplied by the current font size to set the line height.
+    length:It is used to set line height in px, pt, cm etc.
+    %:It specifies the line height as a percentage of the current font.
+    initial:It sets this property to its default value.
+    inherit:It inherits this property from its parent element.
 
  -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
     <style>
-        h1 {
-            color: blue;
-            text-align: center;
+        h3.small {
+            line-height: 70%;
         }
 
-        p {
-            font-size: 18px;
-            text-transform: uppercase;
+        h3.big {
+            line-height: 200%;
         }
     </style>
 </head>
 
 <body>
-
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-
+    <h3>
+        This is a header with default standard line spacing.<br>
+        This is a header with default standard line spacing.<br>
+        The default line spacing in most browsers is around 110% to 120%.<br>
+    </h3>
+    <h3 class="small">
+        This is a title with tight line spacing.<br>
+        This is a title with tight line spacing.<br>
+        This is a title with tight line spacing.<br>
+        This is a title with tight line spacing.<br>
+    </h3>
+    <h3 class="big">
+        This is a header with large line spacing.<br>
+        This is a header with large line spacing.<br>
+        This is a header with large line spacing.<br>
+        This is a header with large line spacing.<br>
+    </h3>
 </body>
+
+</html>
 
 </html>

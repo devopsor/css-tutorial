@@ -1,0 +1,40 @@
+<!-- 
+    CSS property selector
+    Attribute selectors style HTML elements with specified attributes. You can style HTML elements with specified attributes, not just class and id attributes.
+
+    Understanding attribute selectors
+    CSS attribute selectors provide a simple and powerful way to apply styles to HTML elements based on the presence of a specific attribute or attribute value .
+
+    You create attribute selectors by enclosing the attribute (optionally with a value) in a pair of square brackets. You can also put an element type selector in front of it .
+    The following sections describe the most common attribute selectors.
+
+    CSS [attribute] selector
+    This is the simplest form of an attribute selector, which applies style rules to the element if the given attribute exists. 
+    for example, we could style all elements with the title attribute using the following style rules:
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Attribute selector example</title>
+    <style>
+        [title] {
+            color: blue;
+        }
+
+        abbr[title] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 title="heading">Attribute selector </h1>
+    <p title="paragraph">The color of this paragraph will be blue.</p>
+    <div title="paragraph">The color of this div will be blue.</div>
+    <p><abbr title="Hyper Text Markup Language">HTML</abbr>is the publishing language of the World Wide Web</p>
+
+</body>
+
+</html>

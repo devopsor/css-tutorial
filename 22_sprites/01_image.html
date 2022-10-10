@@ -1,0 +1,37 @@
+<!-- 
+    CSS Sprites (Sprites)
+    The CSS Sprites technique is a method of reducing the number of HTTP requests made to image resources by combining images into a single file.
+
+    What is a sprite sheet
+    A sprite is a two-dimensional image that consists of combining small images into one large image at defined X and Y coordinates.
+
+    To display a single image within a combined image, you can define the exact position of the image to display by using the CSS background-position property.
+
+    Advantages of using CSS Image Sprite
+    Web pages with many images, especially many small ones (e.g. icons, buttons, etc.) can take a long time to load and generate multiple server requests.
+
+    Using image sprites instead of individual images will greatly reduce the number of HTTP requests the browser makes to the server, 
+    which is very effective in reducing the load time of web pages and the overall performance of the site.
+
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>CSS Sprite Sample</title>
+ <style>
+     .sprite {
+         background: url("./image/mySprite.png") no-repeat;
+     }
+     .ie {
+         width: 50px; /* Icon width */
+         height: 50px; /* Icon height */
+         display: inline-block; /* Display icon as inline block */
+         background-position: 0 -200px; /* Icon background position in sprite */
+     }
+ </style>
+ </head>
+ <body>
+     <span class="sprite ie"></span>
+ </body>
+ </html>

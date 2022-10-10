@@ -1,31 +1,37 @@
 <!-- 
+CSS white-space
+    The CSS white-space property is used to specify how the content of the element is displayed. It is used to handle whitespace inside elements .
 
+CSS blank value
+    There are many blank values ​​that can be used to display content inside an element.
+    value:describe
+    normal:This is the default value. At this value, newlines will be wrapped if necessary. Sequences of blanks are collapsed into a single blank.
+    nowrap:Sequences of blanks are collapsed into a single blank. At this value, the text will never wrap to the next line, only breaking when markers are used.
+    pre:White space is reserved by the browser. It's like html pre tag. Text will only wrap on newlines.
+    pre-line:Sequences of blanks are collapsed into a single blank. Wrap text when necessary, and wrap in-line.
+    pre-wrap:White space is reserved by the browser. Wrap text when necessary, and wrap in-line.
+    initial:It sets this property to its default value.
+    inherit:It inherits this property from its parent element.
 
  -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
     <style>
-        h1 {
-            color: blue;
-            text-align: center;
-        }
-
         p {
-            font-size: 18px;
-            text-transform: uppercase;
+            white-space: nowrap;
         }
     </style>
 </head>
+<p>
+    Write some text. Write some text. write some text..
+    Write some text. Write some text. write some text..
+    Write some text. Write some text. write some text..
+    Write some text. Write some text. Write some text.
+    Write some text. Write some text. write some text..
+</p>
 
-<body>
-
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-
-</body>
+</html>
 
 </html>

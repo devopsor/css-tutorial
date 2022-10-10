@@ -1,0 +1,40 @@
+<!-- 
+    CSS Counter
+        CSS counter Counters are similar to variables. These are maintained by CSS, and these values ​​can be incremented by CSS 
+        rules to track how many times they are used. Its main purpose is to count the number of times a node element is used by specifying rules.
+        CSS counter counters are helpful for simple CSS-based incrementing and displaying numbers of generated content.
+
+    CSS counter property
+        The following is a list of properties used with CSS counters:
+        counter-reset: Used to create or reset a counter.
+        counter-increment: Used to increment the counter value.
+        content: Used to insert generated content.
+        counter() or counters() function: used to add the value of the counter to the element.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Counters example:</h1>
+    <h2>Java Tutorial</h2>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Oracle Tutorial</h2>
+    <p><strong>Note:</strong> IE8 browser needs to declare !DOCTYPE.</p>
+</body>
+
+</html>

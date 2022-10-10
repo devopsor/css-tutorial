@@ -1,0 +1,40 @@
+<!-- 
+    CSS transparency compatible with all browsers
+    Combining the above two steps, you will get transparency code for all browsers .
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of opaque text inside a CSS transparent box</title>
+    <style>
+        div {
+            float: left;
+            opacity: 0.3;
+            border: 1px solid #949781;
+        }
+
+        div img {
+            display: block;
+        }
+
+        p {
+            float: left;
+            width: 340px;
+            padding: 30px;
+            color: #000000;
+            font-size: 24px;
+            position: relative;
+            margin-left: -400px
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="./image/leaf.jpg" alt="Leaf"></div>
+    <p>This paragraph gives negative margins as if it appeared in the div box, although it's not.</p>
+</body>
+
+</html>

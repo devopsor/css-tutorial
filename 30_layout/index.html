@@ -1,31 +1,91 @@
 <!-- 
-
+Css Layout (web page layout)
+    CSS layout is easy to design. We can use CSS layouts to design our web pages such as homepage, contact us, about us, etc.
+    There are three ways to design a web page layout:
+        HTML Div+CSS Layout : Widely used now.
+        HTML tables : slower and less popular.
+        HTML Frameset : Now deprecated.
+    CSS layouts can contain headers, footers, left panes, right panes and body sections. Let's look at a simple CSS layout example.
 
  -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
     <style>
-        h1 {
-            color: blue;
+        .header {
+            margin: -8px -8px 0px;
+            background-image: linear-gradient(145deg, #7379ff, #b524ef);
+            color: white;
             text-align: center;
+            padding: 10px;
         }
 
-        p {
-            font-size: 18px;
-            text-transform: uppercase;
+        .container {
+            width: 100%
+        }
+
+        .left {
+            width: 15%;
+            float: left;
+        }
+
+        .body {
+            width: 65%;
+            float: left;
+            background-color: pink;
+            padding: 5px;
+        }
+
+        .right {
+            width: 15%;
+            float: left;
+        }
+
+        .footer {
+            margin: -8px;
+            clear: both;
+            background-image: linear-gradient(145deg, #7379ff, #b524ef);
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <h2>Basic Tutorial (cainiaojc.com)</h2>
+    </div>
 
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
+    <div class="container">
+        <div class="left">
+            <p>Left sidebar</p>
+        </div>
+        <div class="body">
+            <h1>Body</h1>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+            <p>The content of the page is here</p>
+        </div>
+        <div class="right">
+            <p>Right column</p>
+        </div>
+    </div>
 
+    <div class="footer">
+        <p>Footer</p>
+    </div>
 </body>
 
 </html>

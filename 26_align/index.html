@@ -1,31 +1,29 @@
 <!-- 
+    CSS vertical-align (vertical alignment)
+        The CSS vertical-align vertical alignment property is used to define the vertical alignment of inline or table cell boxes. 
+        vertical-align is one of the important features of CSS. For beginners, it may not be easy to master at the beginning. 
+        An example is given at the bottom of the article to help you quickly understand and master this property.
 
-
+    What it can do
+        It applies to inline or inline-block elements.
+        It affects the alignment of the element, not its content. (except table cells)
+        When applied to a table cell, it affects the contents of the cell, not the cell itself.
  -->
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <style>
-        h1 {
-            color: blue;
-            text-align: center;
-        }
-
-        p {
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-
-</body>
-
-</html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <style>
+ img.top {
+      vertical-align: text-top;
+ }
+ img.bottom {
+      vertical-align: text-bottom;
+ }
+ </style>
+ </head>
+ <body>
+ <p><img src="./image/bg.jpg" alt="heart"/> This is the image with the default alignment. </p>
+ <p><img src="./image/bg.jpg" style="vertical-align: text-top;" alt="heart"/> This is the image with the text top aligned. </p>
+ <p><img src="./image/bg.jpg" style="vertical-align: text-bottom;" alt="heart"/> This is an image with text bottom alignment. </p>
+ </body>
+ </html>

@@ -1,0 +1,25 @@
+<!-- 
+    CSS transparency compatible with all browsers
+    Combining the above two steps, you will get transparency code for all browsers .
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS transparency example</title>
+    <style>
+        p {
+            opacity: 0.5;   /* The current opacity of major browsers */
+            filter: alpha(opacity=50);  /* Opacity in IE8 and lower */
+            zoom: 1;    /* Fix for IE7 */
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This text is 70% opaque (or 30% transparent). Use the <code>opacity</code> value to see how it works</p>
+</body>
+
+</html>

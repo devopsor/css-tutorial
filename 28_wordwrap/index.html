@@ -1,31 +1,32 @@
 <!-- 
+CSS word-wrap (automatic line wrapping)
+    The CSS word-wrap property is used to break and automatically wrap long words to the next line . 
+    This property is used to prevent overflow when the unbreakable string is too long to fit in the holding box.
 
+CSS literal wrap value
+    value:describe
+    normal:This property is only used to break words at allowed breakpoints.
+    break-word:It is used to break unbreakable words.
+    initial:It is used to set this property to its default value.
+    inherit:It inherits this property from its parent element.
 
  -->
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <style>
-        h1 {
-            color: blue;
-            text-align: center;
-        }
-
-        p {
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-
-</body>
-
-</html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <style> 
+ p.test {
+     width: 11em;
+     background-color: #ff9900; 
+     border: 1px solid #ffffff;
+     padding:10px;
+     word-wrap: break-word;
+ }
+ </style>
+ </head>
+ 
+ <p class="test"> In this paragraph, there is a very long word:
+  iamsooooooooooooooooooooooooooooooolongggggggggggggggg.The long word will break and wrap to the next line.</p>
+ 
+ </html>

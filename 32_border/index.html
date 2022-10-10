@@ -1,31 +1,57 @@
 <!-- 
+    CSS Border
+    The element's (Border) border surrounds the padding and content.
 
+    CSS border property
+    The CSS border properties allow you to define the border area of ​​a box. 
+    Borders can be predefined styles such as solid, double, dashed, etc., or an image . 
+    The next section describes how to set various properties to define the border's style (border-style), 
+    color (border-color) and thickness (border-width).
 
  -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
+    <title>Example of CSS border-color property</title>
     <style>
-        h1 {
-            color: blue;
-            text-align: center;
+        p.one {
+            border-style: solid;
+            border-color: #ff0000;
         }
 
-        p {
-            font-size: 18px;
-            text-transform: uppercase;
+        p.two {
+            border-style: solid;
+            border-color: #ff0000 #00ff00;
+        }
+
+        p.three {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff;
+        }
+
+        p.four {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff #ff00ff;
         }
     </style>
 </head>
 
 <body>
+    <p class="one"> <strong>Single-value syntax</strong>: A single value sets the color of all four borders. </p>
+    <p class="two"> <strong>Two-value syntax</strong>: The first value sets the color of the top and bottom borders, and
+        the second value sets the color of the right and left borders. </>
+    <p class="three"> <strong>Three-value syntax</strong>: The first value sets the color of the top border, the second
+        value sets the color of the left and right borders, and the third value sets the color of the bottom border.
+    </p>
 
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
+    <p class="four"> <strong>Four-value syntax</strong>: Each value sets the color of the border individually in the
+        order top, right, bottom, and left. </p>
 
+    <p> <strong>Note</strong>: You must declare the <code> border-style </code> property before the
+        <code> border-color </code> property. The element must have a border before the border's color can be set.
+    </p>
 </body>
 
 </html>

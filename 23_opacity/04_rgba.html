@@ -1,0 +1,31 @@
+<!-- 
+    CSS transparency compatible with all browsers
+    Combining the above two steps, you will get transparency code for all browsers .
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Transparency example using CSS3 RGBA</title>
+    <style>
+        div {
+            padding: 20px;
+            color: #000000;
+            background: rgba(200, 54, 54, 0.5);
+        }
+
+        p {
+            padding: 20px;
+            background: #dddddd;
+            color: rgba(200, 54, 54, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <p>The text color of this paragraph element is transparent and has no effect on the background color..</p>
+    <div>The background color of this div element is transparent, but has no effect on the color of the text..</div>
+</body>
+
+</html>

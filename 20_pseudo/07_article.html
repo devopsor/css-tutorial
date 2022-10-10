@@ -1,0 +1,28 @@
+<!-- 
+    :Pseudo-elements and CSS classes
+    Often, we only need to use these pseudo- elements to style a paragraph or other block-level element of text. 
+    There, declaring a class to the pseudo-element does the trick. 
+    Pseudo-elements can be combined with CSS classes to have effects, especially for elements with that class.
+
+    The style rule in the following example will display the first letter of all paragraphs, class="article", in green, and a size of xx-large.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pseudo-elements and CSS classes</title>
+    <style>
+        p.article::first-letter {
+            color: #00ff00;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="article">This a sample article.</p>
+    <p>This a normal paragraph.</p>
+</body>
+
+</html>

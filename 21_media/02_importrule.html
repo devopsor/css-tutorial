@@ -1,0 +1,28 @@
+<!-- 
+    Method 2: Use the @import rule
+    The @import rule is another way to set style information for a specific target media - 
+    just specify comma-separated media types after the URL of the imported stylesheet.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS media types</title>
+    <style>
+    @import url("./css/screen.css") screen;
+    @import url("./css/print.css") print;
+    body {
+        background: #f6f6f6;
+        line-height: 1.2;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Media Types</h1>
+    <p><strong>Note:</strong>If you print (or print preview) this page, the output of the HTML code will be different
+        from the output displayed on the screen..</p>
+</body>
+
+</html>

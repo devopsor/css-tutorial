@@ -1,0 +1,32 @@
+<!-- 
+    ::before and ::after pseudo-elements
+    The ::before and ::after pseudo-elements can be used to insert generated content before or after the content of an element. 
+    The content CSS property inserts the generated content when used in conjunction with these pseudo-elements.
+
+    This is useful for further embellishing content-rich elements that shouldn't be part of the actual markup of the page. 
+    You can use these pseudo-elements to insert regular strings or to embed objects (such as images) and other resources.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS ::first-line</title>
+    <style>
+        h1::before {
+            content: url("./image/before.jpg");
+        }
+
+        h1::after {
+            content: url("./image/after.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is a title.
+    </h1>
+</body>
+
+</html>

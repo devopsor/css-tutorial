@@ -1,0 +1,84 @@
+<!-- 
+    CSS @media (media)
+    CSS media types allow you to format documents so that they display correctly on various types of media (such as screen, print, auditory browsers, etc.).
+
+    Introduction to Media Types
+    CSS @media (media) is one of the most important features of style sheets, you can specify separate style sheets for different media types. 
+    This is one of the best ways to build printer friendly web pages - just assign a different stylesheet to the "print" media type.
+    Some CSS properties only work with certain media. For example, the page-break-after property only applies to paged media. 
+    However, there are several properties that can be shared by different media types, but may require different values ​​for that property. 
+    The font-size property is available for screen and print media, for example, but may have different values.
+
+    Documents often require larger fonts on computer screens than on computer screens for better readability, 
+    and sans serif fonts are also considered easier to read on screen, while serif fonts are in print very popular. 
+    Therefore, a style sheet or set of style rules must be specified to apply to certain media types.
+
+    Create media-dependent style sheets
+    There are generally three methods used to specify media dependencies for style sheets:
+
+    Method 1: Use the @media rule
+    The @media rule is used to define different style rules for different media types in a single stylesheet. 
+    Typically, this is followed by a comma-separated list of media types and a CSS declaration block containing style rules for the target media.
+
+    The style declaration in the example below tells the browser to display the body content in 14 pixel Arial font on screen, 
+    but in the case of print it will display it in Timespoint font at 12 points. But line-height , the value of both properties is set to 1.2:
+
+    Different media types
+    The following table lists the various media types that can be used to target different types of devices such as printers, handheld devices, computer screens, etc.
+
+    all:
+        Devices for all media types.
+    aural:
+        For speech and voice synthesizers.
+    braille:
+        For Braille haptic feedback devices.
+    embossed:
+        For page braille printers.
+    handheld:
+        For small or handheld devices - usually small screen devices such as cell phones or PDAs.
+    print:
+        for printers.
+    projection:
+        For projecting presentations, such as projectors.
+    screen:
+        Mainly used for color computer screens.
+    tty:
+        For use in media that use a fixed-pitch character grid, 
+        such as teletypewriters, terminals, or portable devices with limited display capabilities.
+    tv:
+        For TV type devices - low resolution, color, screen with limited scrollability, with sound.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS media types</title>
+    <style>
+        @media screen {
+            body {
+                color: #32cd32;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                line-height: 1.0;
+            }
+        }
+
+        @media print {
+            body {
+                color: red;
+                font-family: Times, serif;
+                font-size: 18pt;
+                line-height: 2.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Media Types</h1>
+    <p><strong>Note:</strong>If you print (or print preview) this page, the output of the HTML code will be different
+        from the output displayed on the screen..</p>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!-- 
+    CSS Pseudo-elements (pseudo-elements)
+    The CSS Pseudo-elements pseudo-element is a keyword appended to the end of a selector that 
+    allows you to style specific parts of the selected element. 
+    Note: In contrast to pseudo-elements, pseudo-classes can change element styles based on state.
+
+    CSS pseudo-elements are a way to style document elements that are not explicitly defined by their position in the document tree.
+
+    What are pseudo-elements
+    CSS pseudo-elements allow you to style an element or part of an element without adding any IDs or classes to it. 
+    This is useful when you only want to style the first letter of a paragraph to create a drop cap effect, 
+    or when you just want to insert some content before or after an element via a stylesheet, etc.
+
+    CSS3 introduced a new double colon (::) syntax for pseudo-elements to distinguish pseudo-elements from pseudo-classes. 
+    The new syntax for pseudo-elements can be given by:
+
+        selector::pseudo-element{ property : value ; }
+
+    These are the following most commonly used pseudo-elements:
+
+    ::first-line first-line pseudo-element
+        The ::first-line pseudo-element applies special styling to the first line of text.
+        The style rule in the following example formats the first line of text in a paragraph. 
+        The length of the first line depends on the size of the browser window or containing element.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS ::first-line</title>
+    <style>
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This is the first line.<br>
+        This is the second line
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- 
+    Add CSS3 border image
+    The border-image property allows you to specify an image to use as the element's border.
+    The design of the border is created from the sides and corners of the image specified in the border-image source URL. 
+    The border image can be sliced, repeated, scaled and stretched in various ways to fit the size of the border image area.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Rounded Corner Example - Basic Tutorial</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 150px;
+            border: 15px solid transparent;
+            -webkit-border-image: url("./border.jpg") 30 30 round;
+            /* Safari 3.1-5 */
+            -o-border-image: url("./border.jpg") 30 30 round;
+            /* Opera 11-12.1 */
+            border-image: url("./border.jpg") 50 50 round;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

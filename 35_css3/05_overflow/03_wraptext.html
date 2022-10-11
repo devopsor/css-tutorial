@@ -1,0 +1,35 @@
+<!-- 
+    Specify text wrapping rules
+    You can also use the CSS3 word-break property to specify the line breaking rules for text yourself (i.e. how to break within words).
+
+    Acceptable values ​​for word-break properties are: normal, break-all and keep-all.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 word-break property example</title>
+    <style>
+        p.line1 {
+            width: 150px;
+            padding: 10px;
+            background: #90ee90;
+            word-break: break-all;
+        }
+
+        p.line2 {
+            width: 150px;
+            padding: 10px;
+            background: #efa38f;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="line1">The line number for this paragraph can break at any character. </p>
+    <p class="line2">The lines in this paragraph will be character breakers. </p>
+</body>
+
+</html>

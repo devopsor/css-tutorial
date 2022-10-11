@@ -1,0 +1,45 @@
+<!-- 
+    CSS3 Background (Background)
+    With CSS3, you can apply multiple backgrounds to elements.
+
+    Use CSS3 backgrounds
+    CSS3 provides several new properties to manipulate an element's background, 
+    such as background clipping, multiple backgrounds, and the option to resize the background.
+
+    The next section will introduce you to all of CSS3's new background features, 
+    for other background-related properties, check out the CSS Backgrounds tutorial.
+
+    CSS3 background-size property
+    The background-size property can be used to specify the size of the background image. 
+    Before CSS3, the size of the background image was determined by the actual size of the image. 
+    The size of the background image can be specified using a pixel or percentage value, as well as keywords to specify auto, 
+    contain and cover. Negative values ​​are not allowed.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of setting the background size of an element </title>
+    <style>
+        .box {
+            width: 350px;
+            height: 150px;
+            background: url("./border.jpg") no-repeat;
+            background-size: contain;
+            border: 6px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <p> 
+        <strong>Note</strong>: 
+        The original size of the background image is 500x300 pixels, 
+        but with the background-size CSS property, we can still display the full image in the smaller box. 
+    </p>
+</body>
+
+</html>

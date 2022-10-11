@@ -1,0 +1,64 @@
+<!-- 
+    CSS3 Text Overflow
+    CSS3's new text properties provide more specification of text rendering.
+
+    Handling text overflow in CSS3
+    CSS3 introduced several new properties to modify text content, but some of these properties have been around for a long time. 
+    These properties allow you to precisely specify the rendering of text on a web browser.
+
+    hide overflow text
+    For example, if you set the white-space attribute value of a blank element to nowrap, 
+    or if a single word is too long to accommodate a long email address, it may cause the text to overflow (for example, prevent it from wrapping). 
+    In this case, the CSS3 text-overflow property can be used to determine how overflow text content is displayed.
+
+    You can display or cut the overflowing text, or cut and display an ellipsis or custom string in the palace where the text is cut to indicate to the user.
+
+    The accepted values ​​for the word-break property are: clip, ellipsis, string .
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 text-overflow property example </title>
+    <style>
+        p {
+            width: 400px;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            background: #f2f2f2;
+        }
+
+        p.clipped {
+            text-overflow: clip;
+        }
+
+        p.ellipses {
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text overflow effect</h1>
+
+    <h2>Cut text to the limits of the content area</h2>
+
+    <p class="clipped"> CSS is a style sheet language used to format document content
+
+        (Written in HTML or other markup language). you might be interested
+
+        Also provided by the CSS Working Group Wiki. </p>
+
+    <h2>Renders ellipsis ("...") to represent clipped text</h2>
+
+    <p class="ellipses"> CSS is a style sheet language used to format document content
+
+        (Written in HTML or other markup language). you might be interested
+
+        Also provided by the CSS Working Group Wiki. </p>
+</body>
+
+</html>

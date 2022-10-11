@@ -1,0 +1,63 @@
+<!-- 
+    CSS3 Background (Background)
+    With CSS3, you can apply multiple backgrounds to elements.
+
+    Use CSS3 backgrounds
+    CSS3 provides several new properties to manipulate an element's background, 
+    such as background clipping, multiple backgrounds, and the option to resize the background.
+
+    The next section will introduce you to all of CSS3's new background features, 
+    for other background-related properties, check out the CSS Backgrounds tutorial.
+
+    CSS3 background-clip property
+    The background-clip property can be used to specify whether the element's background extends into the border. 
+    The background-clip property can take three values: border-box, padding-box, content-box.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Background Clipping Example  </title>
+    <style>
+        .box {
+            width: 250px;
+            height: 150px;
+            padding: 10px;
+            border: 6px dashed #333;
+            background: orange;
+        }
+
+        .clip1 {
+            background-clip: border-box;
+        }
+
+        .clip2 {
+            background-clip: padding-box;
+        }
+
+        .clip3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Default background behavior</h2>
+
+    <div class="box"> </div>
+
+    <h2>Cut the background with a border</h2>
+
+    <div class="box clip1"> </div>
+
+    <h2>Trim background with fill box</h2>
+
+    <div class="box clip2"> </div>
+
+    <h2>Use the content box to clip the background</h2>
+
+    <div class="box clip3"> </div>
+</body>
+
+</html>

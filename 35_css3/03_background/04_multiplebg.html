@@ -1,0 +1,36 @@
+<!-- 
+    CSS3 Background (Background)
+    With CSS3, you can apply multiple backgrounds to elements.
+
+    Use CSS3 backgrounds
+    CSS3 provides several new properties to manipulate an element's background, 
+    such as background clipping, multiple backgrounds, and the option to resize the background.
+
+    The next section will introduce you to all of CSS3's new background features, 
+    for other background-related properties, check out the CSS Backgrounds tutorial.
+
+    CSS3 multiple backgrounds
+    CSS3 enables you to add multiple backgrounds to a single element. 
+    The backgrounds are layered on top of each other. The number of layers is determined by the number of comma-separated values 
+    ​​in the background-image or background shorthand property.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 example of using multiple background images at the same time -  (cainiaojc.com)</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 900px;
+            background: url("./border.jpg") no-repeat center, url("./border.jpg") no-repeat center, url("./border.jpg") no-repeat 10% 30%, lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

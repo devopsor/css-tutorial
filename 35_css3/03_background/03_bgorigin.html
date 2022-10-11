@@ -1,0 +1,39 @@
+<!-- 
+    CSS3 Background (Background)
+    With CSS3, you can apply multiple backgrounds to elements.
+
+    Use CSS3 backgrounds
+    CSS3 provides several new properties to manipulate an element's background, 
+    such as background clipping, multiple backgrounds, and the option to resize the background.
+
+    The next section will introduce you to all of CSS3's new background features, 
+    for other background-related properties, check out the CSS Backgrounds tutorial.
+
+    CSS3 background-origin property
+    The background-origin property can be used to specify the positioning area of ​​the background image. 
+    It can take the same values ​​as the background-clip properties: border-box, padding-box, content-box.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Set the background-origin example of the element </title>
+    <style>
+        .box {
+            width: 250px;
+            height: 150px;
+            padding: 10px;
+            border: 6px dashed #333;
+            background: url("./border.jpg") no-repeat;
+            background-size: contain;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

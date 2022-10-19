@@ -1,0 +1,58 @@
+<!-- 
+CSS3 3D Transform
+The CSS3 3D transform feature allows elements to be transformed in 3D space.
+
+3D transformation of elements
+Using CSS3 3D transform functions, you can perform basic transformation operations on elements in three-dimensional space, 
+such as moving, rotating, scaling, and skewing.
+
+Transformed elements do not affect surrounding elements, but can overlap them like absolutely positioned elements. 
+However, transformed elements still take up space in the layout in their default position (untransformed).
+
+Transform functions using CSS transforms and the Transform() function
+The CSS3 transform property uses transform functionality to manipulate the coordinate system used by an element in order to apply transform effects.
+
+The following sections describe the 3D transform capabilities:
+
+translate3d() function
+The rotation3d() function rotates the element in 3D space around the [x, y, z] direction vector by the specified angle for the dot. 
+This can be written as rotate(vx, vy, vz, angle).
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 translate3d()</title>
+    <style>
+        .container {
+            width: 125px;
+            height: 125px;
+            perspective: 500px;
+            border: 4px solid #e5a043;
+            background: #fff2dd;
+            margin: 30px;
+        }
+
+        .transformed {
+            -webkit-transform: translate3d(25px, 25px, 50px);
+            /* Chrome, Safari, Opera */
+            transform: translate3d(25px, 25px, 50px);
+            /* Standard syntax */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Before Translation:</h2>
+    <div class="container">
+        <img src="./images/diamond.jpg" alt="Diamond Card">
+    </div>
+    <h2>After Translation:</h2>
+    <div class="container">
+        <img src="./images/diamond.jpg" class="transformed" alt="Diamond Card">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!-- 
+CSS3 Animations
+CSS3 animation features allow you to create keyframe animations.
+
+Create CSS3 animations
+In the previous chapter, you have seen how to perform simple animations such as animating a property from one value to another with CSS3 transitions. 
+However, CSS3 transitions have little control over how animations progress over time.
+
+CSS3 animation goes one step further with keyframe-based animation, allowing you to specify changes in CSS properties 
+over time as a set of keyframes, such as Flash animations.
+
+Creating CSS animations is a two-step process, as shown in the following example:
+
+The first step in building CSS animations is to define individual keyframes and use the keyframe declaration to name the animation.
+
+The second step is to use the animation-name property to refer to the keyframe by name, and add animation-duration and 
+other optional animation properties to specify the behavior of the animation.
+
+However, it is not necessary to define keyframe rules before referencing or applying them. 
+The following example will show you how to use CSS3 animation features to animate a <div> box horizontally from one position to another.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Animations</title>
+    <style>
+        .box {
+            margin: 50px;
+            width: 153px;
+            height: 103px;
+            background: url("./images/tortoise-transparent.png") no-repeat;
+            position: relative;
+            /* Chrome, Safari, Opera */
+            -webkit-animation-name: moveit;
+            -webkit-animation-duration: 2s;
+            /* Standard syntax */
+            animation-name: moveit;
+            animation-duration: 2s;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes moveit {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 50%;
+            }
+        }
+
+        /* Standard syntax */
+        @keyframes moveit {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p> <strong>Note</strong>：refresh this page to repeat animations</p>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!-- 
+CSS3 Shadows
+With CSS3, you can apply shadows to elements.
+
+Use CSS3 shadows
+CSS3 enables you to add shadow effects to elements like in Photoshop without using any images. 
+Before CSS3, sliced ​​images were used to create shadows around very annoying elements.
+
+CSS3 box-shadow property
+The box-shadow property can be used to add a shadow to an element's box. 
+You can even apply multiple shadow effects using a comma-separated list of shadows. The basic syntax for creating box shadows can be given by:
+    box-shadow : offset-x offset-y blur-radius color;
+
+Components of the box-shadow property have the following meanings:
+    offset-x — Sets the horizontal offset of the shadow.
+    offset-y — Sets the vertical offset of the shadow.
+    blur-radius — Sets the blur radius. The larger the value, the greater the blur, and the more blurred the edges of 
+                            the shadow. Negative values ​​are not allowed.
+    color — Sets the color of the shadow. If a color value is omitted or not specified, it will take the value of the color property.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Box  Multiple Shadows</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            background: #000;
+            box-shadow: 5px 5px 10px red, 10px 10px 10px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

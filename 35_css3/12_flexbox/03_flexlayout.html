@@ -1,0 +1,65 @@
+<!-- 
+    CSS3 Flexbox Layout
+    CSS3 flexible Box or flexbox is a new layout model for creating more flexible user interface designs.
+
+    Understanding the Flex layout model
+    Flexible box, commonly known as flexbox, is a new layout model introduced in CSS3 for creating flexible user interface designs with multiple rows and 
+    columns without using percentages or fixed-length values. The CSS3 flex layout model provides a simple yet powerful mechanism to automatically handle 
+    spatial distribution and content alignment through style sheets without interfering with the actual markup.
+
+    The following example shows how to use the flex layout model to create a three-column layout where each column is equal in width and height.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 Box-Sizing</title>
+    <style>
+        .flex-container {
+            width: 80%;
+            min-height: 300px;
+            margin: 0 auto;
+            font-size: 32px;
+            /* Safari */
+            display: -webkit-flex;
+            -webkit-flex-direction: column;
+            /* Standard syntax */
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #666;
+        }
+
+        .flex-container div {
+            padding: 10px;
+            -webkit-flex: 1;
+            /* Safari 6.1+ */
+            -ms-flex: 1;
+            /* IE 10 */
+            flex: 1;
+            /* Standard syntax */
+        }
+
+        .item1 {
+            background: #e84d51;
+        }
+
+        .item2 {
+            background: #7ed636;
+        }
+
+        .item3 {
+            background: #2f97ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+</body>
+
+</html>
